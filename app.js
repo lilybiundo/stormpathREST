@@ -30,7 +30,9 @@ app.use('/api', expstormpath.groupsRequired(['groupName1, group2']), ...) //requ
 app.use('/api', expstormpath.groupsRequired(['groupName1, group2'], false), ...) //requires at least one group
 */
 
-app.use('/api', require('./router'));
+app.use('/api', require('./sprouter'));
+
+app.use('/sql', require('./sqlrouter'));
 
 app.on('stormpath.ready',function(){
   console.log('Stormpath Ready');

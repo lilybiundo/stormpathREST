@@ -41,7 +41,7 @@ router.get('/groups', function (req, res) {
     });
 });
 
-//Create a new account (can be modified to update existing account as well)
+//Create a new account (can be updated to update existing account)
 //Required query params: accountEmail
 //Optional query Params: fname, lname
 router.post('/account', function(req, res) {
