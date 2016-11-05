@@ -3,7 +3,7 @@ var express = require('express'),
 
 var router = express.Router();
 
-var connectionString = 'postgres://postgres:XXXXX@localhost/unevrse_test';
+var connectionString = require('./sqlstring.json').connectionString;
 
 var db = massive.connectSync({
     connectionString: connectionString

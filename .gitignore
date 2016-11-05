@@ -50,3 +50,5 @@ Temporary Items
 node_modules/
 stormpath.yml
 envvariables.txt
+sqlstring.txt
+sqlstring.json
